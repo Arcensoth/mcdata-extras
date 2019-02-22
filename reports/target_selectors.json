@@ -1,0 +1,130 @@
+{
+  "bases": ["a", "e", "p", "r", "s"],
+  "arguments": {
+    "x": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double"
+    },
+    "y": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double"
+    },
+    "z": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double"
+    },
+    "dx": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double"
+    },
+    "dy": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double"
+    },
+    "dz": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double"
+    },
+    "x_rotation": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double_range"
+    },
+    "y_rotation": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "brigadier:double_range"
+    },
+    "distance": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "mcdata_extras:double_range"
+    },
+    "team": {
+      "repeatable": false,
+      "negatable": true,
+      "nullable": true,
+      "parser": "mcdata_extras:team"
+    },
+    "scores": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "mcdata_extras:score_map"
+    },
+    "advancements": {
+      "repeatable": false,
+      "negatable": false,
+      "parser": "mcdata_extras:advancement_map"
+    },
+    "nbt": {
+      "repeatable": true,
+      "negatable": true,
+      "nullable": false,
+      "type": "minecraft:nbt_compound_tag"
+    },
+    "tag": {
+      "repeatable": true,
+      "negatable": true,
+      "nullable": true,
+      "parser": "mcdata_extras:entity_tag"
+    },
+    "level": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "minecraft:int_range"
+    },
+    "type": {
+      "repeatable": false,
+      "negatable": true,
+      "nullable": false,
+      "parser": "minecraft:resource_location"
+    },
+    "name": {
+      "repeatable": false,
+      "negatable": true,
+      "nullable": true,
+      "parser": "mcdata_extras:quotable_string"
+    },
+    "gamemode": {
+      "repeatable": false,
+      "negatable": true,
+      "nullable": false,
+      "parser": "mcdata_extras:choice",
+      "properties": {
+        "choices": ["survival", "creative", "adventure", "spectator"]
+      }
+    },
+    "sort": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "mcdata_extras:choice",
+      "properties": {
+        "choices": ["arbitrary", "furthest", "nearest", "random"]
+      }
+    },
+    "limit": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "mcdata_extras:positive_integer"
+    }
+  }
+}
