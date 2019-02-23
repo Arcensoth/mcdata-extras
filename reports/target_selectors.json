@@ -41,13 +41,13 @@
       "repeatable": false,
       "negatable": false,
       "nullable": false,
-      "parser": "brigadier:double_range"
+      "parser": "mcdata_extras:double_range"
     },
     "y_rotation": {
       "repeatable": false,
       "negatable": false,
       "nullable": false,
-      "parser": "brigadier:double_range"
+      "parser": "mcdata_extras:double_range"
     },
     "distance": {
       "repeatable": false,
@@ -61,34 +61,17 @@
       "nullable": true,
       "parser": "mcdata_extras:team"
     },
-    "scores": {
-      "repeatable": false,
-      "negatable": false,
-      "nullable": false,
-      "parser": "mcdata_extras:score_map"
-    },
-    "advancements": {
-      "repeatable": false,
-      "negatable": false,
-      "parser": "mcdata_extras:advancement_map"
-    },
-    "nbt": {
-      "repeatable": true,
-      "negatable": true,
-      "nullable": false,
-      "type": "minecraft:nbt_compound_tag"
-    },
     "tag": {
       "repeatable": true,
       "negatable": true,
       "nullable": true,
       "parser": "mcdata_extras:entity_tag"
     },
-    "level": {
+    "name": {
       "repeatable": false,
-      "negatable": false,
-      "nullable": false,
-      "parser": "minecraft:int_range"
+      "negatable": true,
+      "nullable": true,
+      "parser": "mcdata_extras:quotable_string"
     },
     "type": {
       "repeatable": false,
@@ -96,11 +79,11 @@
       "nullable": false,
       "parser": "minecraft:resource_location"
     },
-    "name": {
+    "level": {
       "repeatable": false,
-      "negatable": true,
-      "nullable": true,
-      "parser": "mcdata_extras:quotable_string"
+      "negatable": false,
+      "nullable": false,
+      "parser": "minecraft:int_range"
     },
     "gamemode": {
       "repeatable": false,
@@ -125,6 +108,24 @@
       "negatable": false,
       "nullable": false,
       "parser": "mcdata_extras:positive_integer"
+    },
+    "scores": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "mcdata_extras:score_map"
+    },
+    "advancements": {
+      "repeatable": false,
+      "negatable": false,
+      "nullable": false,
+      "parser": "mcdata_extras:advancement_map"
+    },
+    "nbt": {
+      "repeatable": true,
+      "negatable": true,
+      "nullable": false,
+      "type": "minecraft:nbt_compound_tag"
     }
   }
 }
